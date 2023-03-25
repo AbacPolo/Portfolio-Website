@@ -28,6 +28,7 @@ h6,
 .h6,
 p,
 a,
+ul,
 li {
   margin: 0;
   padding: 0;
@@ -99,8 +100,6 @@ h1 {
   display: flex;
   justify-content: right;
   gap: 1rem;
-  padding: 0;
-  margin: 0;
 }
 
 .lenguageAncors ul img{
@@ -118,9 +117,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
   width: 100%;
-  margin: 0;
 }
 
 .sectionAncors li{
@@ -194,6 +191,56 @@ h1 {
     order: 3;
   } 
 }
+
+/* Sidebar */
+.sidebarPhone {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10;
+  width: 5rem;
+}
+
+.openContactMenu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #dce0d9;
+  border-radius: 2.5rem;
+}
+
+.contactMenu {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #dce0d9;
+  border-radius: 2.5rem;
+}
+
+.sidebarPhone li {
+  display: block;
+}
+
+.sidebarPhone a {
+  color: #252525;
+}
+
+.sidebarPhone a:focus {
+  color: #ff7a00;
+}
+
+.sidebarPhone a:focus-visible {
+  color: #ff7a00;
+}
+
+.sidebarPhone a:active {
+  color: #ff7a00;
+}
+
 
 /* Main */
 
