@@ -130,6 +130,7 @@ h1 {
   padding: 0.75rem 0rem;
   box-sizing: border-box;
   font-size: 1.125rem;
+  color: #2a3d45;
 }
 
 .sectionAncors a:hover {
@@ -139,7 +140,6 @@ h1 {
 
 @media only screen and (min-width: 769px) {
   header {
-    border-bottom: 2px solid #dce0d9;
     padding: 0rem 1rem;
   }
 
