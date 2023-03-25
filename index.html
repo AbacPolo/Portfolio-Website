@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <!-- JavaScripts-->
-    <script src=""></script>
+    <script src="./basic.js"></script>
 
     <!--stylesheet-->
     <link rel="stylesheet" href="styles.css" />
@@ -61,13 +61,27 @@
 
     <div class="sidebarPhone">
       <ul class="openContactMenu">
-        <li><a href=""><i class="fa-solid fa-circle-user fa-4x"></i></a></li>
+        <li>
+          <div class="sideBarControl" onclick="openSidebar()">
+            <i class="fa-solid fa-circle-user fa-4x"></i>
+          </div>
+        </li>
       </ul>
       <ul class="contactMenu">
-        <li><a href=""><i class="fa-regular fa-circle-xmark fa-4x"></i></a></li>
-        <li><a href=""><i class="fa-solid fa-envelope fa-4x"></i></a></li>
-        <li><a href=""><i class="fa-brands fa-linkedin fa-4x"></i></a></li>
-        <li><a href=""><i class="fa-brands fa-github fa-4x"></i></a></li>
+        <li>
+          <div class="sideBarControl" onclick="closeSidebar()">
+            <i class="fa-regular fa-circle-xmark fa-4x"></i>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-envelope fa-4x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin fa-4x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-github fa-4x"></i></a>
+        </li>
       </ul>
     </div>
 

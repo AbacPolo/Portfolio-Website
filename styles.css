@@ -62,6 +62,7 @@ nav {
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  gap: 0.5rem 0;
 }
 
 nav li {
@@ -102,10 +103,9 @@ h1 {
   gap: 1rem;
 }
 
-.lenguageAncors ul img{
-  width: 2rem;
+.lenguageAncors ul img {
+  width: 2.5rem;
 }
-
 
 .sectionAncors {
   order: 3;
@@ -120,7 +120,7 @@ h1 {
   width: 100%;
 }
 
-.sectionAncors li{
+.sectionAncors li {
   padding: 1rem 0rem;
 }
 
@@ -157,6 +157,7 @@ h1 {
   nav {
     flex-wrap: nowrap;
     width: 100%;
+    gap: none;
   }
 
   .headerLogo {
@@ -189,7 +190,7 @@ h1 {
 
   .lenguageAncors {
     order: 3;
-  } 
+  }
 }
 
 /* Sidebar */
@@ -202,7 +203,7 @@ h1 {
 }
 
 .openContactMenu {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
@@ -211,7 +212,7 @@ h1 {
 }
 
 .contactMenu {
-  display: flex;
+  display: none;
   flex-wrap: wrap-reverse;
   gap: 1rem;
   justify-content: center;
@@ -225,8 +226,28 @@ h1 {
   display: block;
 }
 
+.sideBarControl:hover {
+  color: #ff7a00;
+}
+
+.sideBarControl:focus {
+  color: #ff7a00;
+}
+
+.sideBarControl:focus-visible {
+  color: #ff7a00;
+}
+
+.sideBarControl:active {
+  color: #ff7a00;
+}
+
 .sidebarPhone a {
   color: #252525;
+}
+
+.sidebarPhone a:hover {
+  color: #ff7a00;
 }
 
 .sidebarPhone a:focus {
@@ -240,7 +261,6 @@ h1 {
 .sidebarPhone a:active {
   color: #ff7a00;
 }
-
 
 /* Main */
 
