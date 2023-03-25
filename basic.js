@@ -3,10 +3,10 @@
 
 const openSidebar = () => {
   document.getElementsByClassName("openContactMenu")[0].style.display = "none";
-  document.getElementsByClassName("contactMenu")[0].style.display = "flex";
+  document.getElementsByClassName("contactMenuPhone")[0].style.display = "flex";
 };
 
 const closeSidebar = () => {
   document.getElementsByClassName("openContactMenu")[0].style.display = "flex";
-  document.getElementsByClassName("contactMenu")[0].style.display = "none";
+  document.getElementsByClassName("contactMenuPhone")[0].style.display = "none";
 };

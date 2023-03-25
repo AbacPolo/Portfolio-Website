@@ -211,7 +211,7 @@ h1 {
   border-radius: 2.5rem;
 }
 
-.contactMenu {
+.contactMenuPhone {
   display: none;
   flex-wrap: wrap-reverse;
   gap: 1rem;
@@ -260,6 +260,57 @@ h1 {
 
 .sidebarPhone a:active {
   color: #ff7a00;
+}
+
+.sidebarDesktop {
+  display: none;
+  position: absolute;
+  top: 297px;
+  right: 1rem;
+  z-index: 10;
+  width: 5rem;
+}
+
+.contactMenuDesktop {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 3.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarDesktop li {
+  display: block;
+}
+
+.sidebarDesktop a {
+  color: #252525;
+}
+
+.sidebarDesktop a:hover {
+  color: #ff7a00;
+}
+
+.sidebarDesktop a:focus {
+  color: #ff7a00;
+}
+
+.sidebarDesktop a:focus-visible {
+  color: #ff7a00;
+}
+
+.sidebarDesktop a:active {
+  color: #ff7a00;
+}
+
+@media only screen and (min-width: 769px) {
+  .sidebarDesktop {
+    display: flex;
+  }
+
+  .sidebarPhone {
+    display: none;
+  }
 }
 
 /* Main */
