@@ -128,7 +128,7 @@ h1 {
 }
 
 .sectionAncors a {
-  padding: 0.75rem 0rem;
+  padding: 0.75rem 1rem;
   box-sizing: border-box;
   font-size: 1.125rem;
   color: #2a3d45;
@@ -172,17 +172,16 @@ h1 {
     width: auto;
     max-width: 25rem;
     flex-grow: 4;
-    padding: 0rem 3rem;
+    padding: 0rem 1.5rem;
     height: 100%;
   }
 
   .sectionAncors a {
-    padding: 1.71875rem 0rem;
+    padding: 1.71875rem 1.5rem;
   }
 
-
   .sectionAncors ul {
-    gap: 3rem;
+    /* gap: 3rem; */
     height: 100%;
   }
 
