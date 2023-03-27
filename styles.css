@@ -38,6 +38,7 @@ li {
   vertical-align: baseline;
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
+  color: #252525;
 }
 
 p,
@@ -149,7 +150,6 @@ h1 {
   padding: 0.75rem 1rem;
   box-sizing: border-box;
   font-size: 1.125rem;
-  color: #2a3d45;
 }
 
 .sectionAncors a:hover {
@@ -216,7 +216,7 @@ h1 {
 
 /* Sidebar */
 .sidebarPhone {
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   right: 1rem;
   z-index: 10;
@@ -267,7 +267,7 @@ h1 {
   display: none;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   height: calc(100% - 5.3125rem);
   top: 5.3125rem;
   right: 1rem;
@@ -284,7 +284,6 @@ h1 {
   height: fit-content;
 }
 
-
 .sidebarDesktop li {
   display: block;
 }
@@ -300,5 +299,78 @@ h1 {
 }
 
 /* Main */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Section 1 */
+#aboutSection {
+  background-image: url('./Images/Onades Taronja.png');
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portraitImgContainer {
+  position: relative;
+  order: 1;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+}
+
+.portraitImgContainer:before {
+  content: "";
+  box-sizing: border-box;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(220,224,217, 1) 0%,
+    rgba(220,224,217, 0.4) 20%,
+    rgba(220,224,217, 0) 40%,
+    rgba(220,224,217, 0) 100%
+  );
+  border: 2px solid #dce0d9;
+}
+
+.portraitImgContainer img {
+  width: 100%;
+}
+
+.infoContainer {
+  order: 2;
+  position: relative;
+  top: -2.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.infoContainer p {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+.hireMeButton {
+  height: 3rem;
+  width: 7rem;
+  border: 2px solid #252525;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
 
 /* Footer */
