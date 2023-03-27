@@ -308,13 +308,23 @@ h1 {
   overflow: hidden;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
 /* Section 1 */
 #aboutSection {
+  background-color: #fff;
+}
+
+.backgroundWaveOrange {
   background-image: url('./Images/Onades Taronja.png');
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 45rem;
 }
 
 .portraitImgContainer {
@@ -351,14 +361,9 @@ h1 {
   top: -2.5rem;
 }
 
-h2 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
 .infoContainer p {
   margin: 1rem 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 600;
 }
@@ -371,6 +376,73 @@ h2 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.25rem;
+}
+
+/* Section 2 */
+
+#portfolioSection {
+  background-color: #ff7a00;
+}
+
+.backgroundWaveGray {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  background-image: url('./Images/Onada Gris.png');
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 45rem;
+  gap: 3rem;
+}
+
+.sectionTitle {
+  height: fit-content;
+}
+
+.portfolioGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.portfolioGrid li {
+  display: block;
+}
+
+.portfolioGrid li:nth-child(3),
+.portfolioGrid li:nth-child(4) {
+  display: none;
+}
+
+.portfolioGrid img {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid #dce0d9;
+}
+
+/* Section 3 */
+#educationSection {
+  background-color: #dce0d9;
+  min-height: 45rem;
+}
+
+.educationContainer p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+.codecademiLogoContainer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+}
+
+.codecademiLogoContainer img {
+  width: 100%;
 }
 
 /* Footer */
