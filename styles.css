@@ -265,8 +265,11 @@ h1 {
 
 .sidebarDesktop {
   display: none;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 297px;
+  height: calc(100% - 5.3125rem);
+  top: 5.3125rem;
   right: 1rem;
   z-index: 10;
   width: 5rem;
@@ -278,7 +281,9 @@ h1 {
   gap: 3.5rem;
   justify-content: center;
   align-items: center;
+  height: fit-content;
 }
+
 
 .sidebarDesktop li {
   display: block;
