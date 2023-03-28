@@ -288,7 +288,7 @@ h1 {
   display: block;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
   .sidebarDesktop {
     display: flex;
   }
@@ -320,13 +320,19 @@ h3 {
   line-height: 1.5rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .section {
+    padding: 2rem 7rem;
+  }
+}
+
 /* Section 1 */
 #aboutSection {
   background-color: #fff;
 }
 
 .backgroundWaveOrange {
-  background-image: url('./Images/Onades Taronja.png');
+  background-image: url("./Images/Onades Taronja.png");
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -339,30 +345,32 @@ h3 {
   order: 1;
   box-sizing: border-box;
   width: 100%;
-  margin: 1rem 1rem 0rem ;
-  border: 2px solid #dce0d9;
+  margin: 1rem 1rem 0rem;
+  height: fit-content;
 }
 
 .overlayPortrait {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  /* left: 0;
+  right: 0; */
   background: linear-gradient(
     0deg,
-    rgba(220,224,217, 1) 0%,
-    rgba(220,224,217, 0.4) 20%,
-    rgba(220,224,217, 0) 40%,
-    rgba(220,224,217, 0) 100%
+    rgba(220, 224, 217, 1) 0%,
+    rgba(220, 224, 217, 0.4) 20%,
+    rgba(220, 224, 217, 0) 40%,
+    rgba(220, 224, 217, 0) 100%
   );
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .portraitImgContainer img {
+  box-sizing: border-box;
   width: 100%;
+  border: 2px solid #dce0d9;
 }
 
 .infoContainer {
@@ -388,6 +396,46 @@ h3 {
   line-height: 1.25rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  #aboutSection .section {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .backgroundWaveOrange {
+    background-size: contain;
+    min-height: 35rem;
+  }
+
+  .portraitImgContainer {
+    order: 2;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+  }
+
+  .portraitImgContainer img {
+    width: 130%;
+  }
+
+  .overlayPortrait {
+    width: 130%;
+    background: linear-gradient(
+      90deg,
+      rgba(220, 224, 217, 1) 0%,
+      rgba(220, 224, 217, 0.4) 30%,
+      rgba(220, 224, 217, 0) 50%,
+      rgba(220, 224, 217, 0) 100%
+    );
+  }
+
+  .infoContainer {
+    order: 1;
+    width: 100%;
+    top: 0;
+  }
+}
+
 /* Section 2 */
 
 #portfolioSection {
@@ -399,7 +447,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
-  background-image: url('./Images/Onada Gris.png');
+  background-image: url("./Images/Onada Gris.png");
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -432,39 +480,75 @@ h3 {
   border: 2px solid #dce0d9;
 }
 
-    /* Portfolio Image Overlay */
-    .portfolioImgContainer {
-      position: relative;
-      width: 100%;
-    }
-    
-    .overlayPortfolio {
-      position: absolute;
-      box-sizing: border-box;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(255,255,255, 0.7);
-      width: 100%;
-      height: 60%;
-      overflow: hidden;
-      transition: .5s ease;
-      padding: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-    }
+/* Portfolio Image Overlay */
+.portfolioImgContainer {
+  position: relative;
+  width: 100%;
+}
 
-    .portfolioImgContainer:hover .overlayPortfolio {
-      height: 100%;
-    }
+.overlayPortfolio {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  transition: 0.5s ease;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
 
-    .portfolioImgContainer p {
-      margin: 1rem 0 0;
-      font-size: 1rem;
-      line-height: 2rem;
-      font-weight: 400;
-    }
+.portfolioImgContainer:hover .overlayPortfolio {
+  height: 100%;
+}
+
+.portfolioImgContainer p {
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .backgroundWaveGray {
+    background-size: contain;
+    min-height: 48rem;
+  }
+  
+  .sectionTitle {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .portfolioGrid img {
+    box-sizing: border-box;
+    border: 2px solid #dce0d9;
+  }
+
+  .portfolioGrid li {
+    width: calc(50% - 1rem);
+  }
+
+  .overlayPortfolio {
+    height: 0%;
+    padding: 0;
+  }
+  
+  .portfolioGrid li {
+  display: block;
+}
+  
+  .portfolioGrid li:nth-child(3),
+  .portfolioGrid li:nth-child(4) {
+    display: block;
+  }
+}
 
 /* Section 3 */
 #educationSection {
