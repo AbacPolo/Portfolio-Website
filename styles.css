@@ -318,11 +318,24 @@ h3 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 2rem 4rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .section {
-    padding: 2rem 7rem;
+    padding: 3rem 7rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    padding: 4rem 12rem 3rem;
   }
 }
 
@@ -336,7 +349,7 @@ h3 {
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
-  min-height: 45rem;
+  /* min-height: 45rem; */
   align-content: flex-start;
 }
 
@@ -396,7 +409,7 @@ h3 {
   line-height: 1.25rem;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   #aboutSection .section {
     flex-wrap: nowrap;
     align-items: center;
@@ -404,7 +417,7 @@ h3 {
 
   .backgroundWaveOrange {
     background-size: contain;
-    min-height: 35rem;
+    /* min-height: 30rem; */
   }
 
   .portraitImgContainer {
@@ -451,12 +464,16 @@ h3 {
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
-  min-height: 45rem;
+  /* min-height: 45rem; */
   gap: 3rem;
 }
 
 .sectionTitle {
   height: fit-content;
+}
+
+.portfolioGridContainer {
+  margin: 0 0 3rem 0;
 }
 
 .portfolioGrid {
@@ -494,10 +511,10 @@ h3 {
   right: 0;
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
-  height: 60%;
+  min-height: 50%; 
   overflow: hidden;
+  padding: 0rem 0.5rem;
   transition: 0.5s ease;
-  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -507,25 +524,29 @@ h3 {
   height: 100%;
 }
 
+.portfolioImgContainer h3 {
+  width: 100%;
+}
+
 .portfolioImgContainer p {
   margin: 1rem 0 0;
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 400;
+  width: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
-
+@media only screen and (min-width: 768px) {
   .backgroundWaveGray {
     background-size: contain;
-    min-height: 48rem;
+    /* min-height: 43rem; */
   }
-  
+
   .sectionTitle {
     width: 100%;
     text-align: center;
   }
-  
+
   .portfolioGrid img {
     box-sizing: border-box;
     border: 2px solid #dce0d9;
@@ -535,25 +556,49 @@ h3 {
     width: calc(50% - 1rem);
   }
 
-  .overlayPortfolio {
-    height: 0%;
-    padding: 0;
-  }
-  
-  .portfolioGrid li {
-  display: block;
-}
-  
   .portfolioGrid li:nth-child(3),
   .portfolioGrid li:nth-child(4) {
     display: block;
   }
 }
 
+@media only screen and (min-width: 1025px) {
+  .portfolioGridContainer {
+    margin: 0 0 5rem 0;
+  }
+
+  .overlayPortfolio {
+    height: 0%;
+    min-height: auto; 
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .portfolioGridContainer {
+    margin: 0 0 5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolioGrid {
+    max-width: 110rem;
+  }
+
+  .portfolioGrid li {
+    width: calc(50% - 1rem);
+  }
+}
+
+
 /* Section 3 */
 #educationSection {
   background-color: #dce0d9;
-  min-height: 45rem;
+}
+
+#educationSection .section {
+  min-height: 43rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .educationContainer p {
@@ -565,12 +610,28 @@ h3 {
 
 .codecademiLogoContainer {
   box-sizing: border-box;
-  width: 100%;
-  padding: 1rem;
+  width: 90%;
+  height: 90%;
+  display: flex;
 }
 
 .codecademiLogoContainer img {
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .educationContainer {
+    width: 50%;
+  }
+
+  .codecademiLogoContainer {
+    width: 50%;
+    max-width: 31rem;
+  }
+
+  #educationSection .section {
+    gap: 4rem;
+  }
 }
 
 /* Footer */
