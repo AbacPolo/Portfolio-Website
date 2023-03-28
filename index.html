@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <!-- JavaScripts-->
-    <script src=""></script>
+    <script src="./basic.js"></script>
 
     <!--stylesheet-->
     <link rel="stylesheet" href="styles.css" />
@@ -19,6 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Josefin+Sans:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!--icons-->
+    <script
+      src="https://kit.fontawesome.com/9c72e7c2b5.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!--responsive viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,15 +47,150 @@
         </div>
         <div class="lenguageAncors">
           <ul>
-            <li><a href=""><img src="./Images/spain.png" alt="Spanish Flag"></a></li>
-            <li><a href="" ></a><img src="./Images/united-kingdom.png" alt="UK Flag"></li>
+            <li>
+              <a href=""><img src="./Images/spain.png" alt="Spanish Flag" /></a>
+            </li>
+            <li>
+              <a href=""></a
+              ><img src="./Images/united-kingdom.png" alt="UK Flag" />
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main></main>
+    <div class="sidebarPhone">
+      <ul class="openContactMenu">
+        <li>
+          <div class="sideBarControl" onclick="openSidebar()">
+            <i class="fa-solid fa-circle-user fa-4x"></i>
+          </div>
+        </li>
+      </ul>
+      <ul class="contactMenuPhone">
+        <li>
+          <div class="sideBarControl" onclick="closeSidebar()">
+            <i class="fa-regular fa-circle-xmark fa-4x"></i>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-envelope fa-4x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin fa-4x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-github fa-4x"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebarDesktop">
+      <ul class="contactMenuDesktop">
+        <li>
+          <a href=""><i class="fa-solid fa-envelope fa-4x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-github fa-4x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin fa-4x"></i></a>
+          
+        </li>
+      </ul>
+    </div>
 
-    <footer></footer>
+    <main>
+      <section id="aboutSection">
+        <div class="backgroundWaveOrange section">
+          <div class="portraitImgContainer">
+            <img src="./Images/placeholder-portrait.jpg" alt="" />
+            <div class="overlayPortrait"></div>
+          </div>
+          <div class="infoContainer">
+            <h2>FULL-STACK DEVELOPER</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              blandit augue id risus consectetur porta. Fusce ac maximus libero.
+            </p>
+            <button class="hireMeButton">HIRE ME</button>
+          </div>
+        </div>
+      </section>
+      <section id="portfolioSection">
+        <div class="backgroundWaveGray section">
+          <div class="sectionTitle">
+            <h2>PORTFOLIO</h2>
+          </div>
+          <div class="portfolioGridContainer">
+            <ul class="portfolioGrid">
+              <li>
+                <a href="">
+                  <div class="portfolioImgContainer">
+                    <img src="./Images/placeholder - web.jpg" alt="" />
+                    <div class="overlayPortfolio">
+                      <h3>Lorem ipsum dolor sit amet</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="portfolioImgContainer">
+                    <img src="./Images/placeholder - web.jpg" alt="" />
+                    <div class="overlayPortfolio">
+                      <h3>Lorem ipsum dolor sit amet</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="portfolioImgContainer">
+                    <img src="./Images/placeholder - web.jpg" alt="" />
+                    <div class="overlayPortfolio">
+                      <h3>Lorem ipsum dolor sit amet</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="portfolioImgContainer">
+                    <img src="./Images/placeholder - web.jpg" alt="" />
+                    <div class="overlayPortfolio">
+                      <h3>Lorem ipsum dolor sit amet</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="educationSection">
+        <div class="section">
+          <div class="educationContainer">
+            <h2>EDUCATION</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              blandit augue id risus consectetur porta. Fusce ac maximus libero.
+              Pellentesque pretium tortor non tortor vulputate ultrices.
+            </p>
+          </div>
+          <div class="codecademiLogoContainer">
+            <img src="./Images/Codecademi Logo.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+
+
+    </footer>
   </body>
 </html>
