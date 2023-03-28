@@ -10,3 +10,5 @@ const closeSidebar = () => {
   document.getElementsByClassName("openContactMenu")[0].style.display = "flex";
   document.getElementsByClassName("contactMenuPhone")[0].style.display = "none";
 };
+
+
