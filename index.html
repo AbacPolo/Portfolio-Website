@@ -40,9 +40,9 @@
         </div>
         <div class="sectionAncors">
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Education</a></li>
+            <li><a href="#aboutSection">About</a></li>
+            <li><a href="#portfolioSection">Portfolio</a></li>
+            <li><a href="#educationSection">Education</a></li>
           </ul>
         </div>
         <div class="lenguageAncors">
@@ -74,34 +74,34 @@
           </div>
         </li>
         <li>
-          <a href=""><i class="fa-solid fa-envelope fa-4x"></i></a>
+          <a href="" target=”_blank”><i class="fa-solid fa-envelope fa-4x"></i></a>
         </li>
         <li>
-          <a href=""><i class="fa-brands fa-linkedin fa-4x"></i></a>
+          <a href="https://www.linkedin.com/in/abac-polo-p%C3%A9rez-23398212a/" target=”_blank”><i class="fa-brands fa-linkedin fa-4x"></i></a>
         </li>
         <li>
-          <a href=""><i class="fa-brands fa-github fa-4x"></i></a>
+          <a href="" target=”_blank”><i class="fa-brands fa-github fa-4x"></i></a>
         </li>
       </ul>
     </div>
     <div class="sidebarDesktop">
       <ul class="contactMenuDesktop">
         <li>
-          <a href=""><i class="fa-solid fa-envelope fa-4x"></i></a>
+          <a href="" target=”_blank”><i class="fa-solid fa-envelope fa-4x"></i></a>
         </li>
         <li>
-          <a href=""><i class="fa-brands fa-github fa-4x"></i></a>
+          <a href="" target=”_blank”><i class="fa-brands fa-github fa-4x"></i></a>
         </li>
         <li>
-          <a href=""><i class="fa-brands fa-linkedin fa-4x"></i></a>
-          
+          <a href="https://www.linkedin.com/in/abac-polo-p%C3%A9rez-23398212a/" target=”_blank”><i class="fa-brands fa-linkedin fa-4x"></i></a>
         </li>
       </ul>
     </div>
 
     <main>
-      <section id="aboutSection">
-        <div class="backgroundWaveOrange section">
+      <section class="root" id="aboutSection">
+        <div class="backgroundWaveOrange"></div>
+        <div class="wrapper">
           <div class="portraitImgContainer">
             <img src="./Images/placeholder-portrait.jpg" alt="" />
             <div class="overlayPortrait"></div>
@@ -112,12 +112,15 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               blandit augue id risus consectetur porta. Fusce ac maximus libero.
             </p>
-            <button class="hireMeButton">HIRE ME</button>
+            <button class="hireMeButton" onclick="location.href='#footerForm'">HIRE ME</button>
           </div>
         </div>
+      </div>
       </section>
-      <section id="portfolioSection">
-        <div class="backgroundWaveGray section">
+
+      <section class="root" id="portfolioSection">
+        <div class="backgroundWaveGray"></div>
+        <div class="wrapper">
           <div class="sectionTitle">
             <h2>PORTFOLIO</h2>
           </div>
@@ -171,8 +174,8 @@
           </div>
         </div>
       </section>
-      <section id="educationSection">
-        <div class="section">
+      <section class="root" id="educationSection">
+        <div class="wrapper">
           <div class="educationContainer">
             <h2>EDUCATION</h2>
             <p>
@@ -188,7 +191,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="footerForm">
 
 
     </footer>
