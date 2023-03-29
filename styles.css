@@ -228,7 +228,7 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  background-color: #dce0d9;
+  background-color: #dce0d9d3;
   border-radius: 2.5rem;
 }
 
@@ -239,7 +239,7 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  background-color: #dce0d9;
+  background-color: #dce0d9d3;
   border-radius: 2.5rem;
 }
 
@@ -283,12 +283,16 @@ h1 {
   align-items: center;
   height: fit-content;
   padding: 1.5rem 0rem;
-  background-color: #dce0d9;
+  background-color: #dce0d97e;
   border-radius: 2.5rem;
 }
 
 .sidebarDesktop li {
   display: block;
+}
+
+.sidebarDesktop li:hover {
+  scale: 1.1;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -299,13 +303,17 @@ h1 {
   .sidebarPhone {
     display: none;
   }
+
+  .sidebarDesktop a:hover {
+    color: #ff7a00;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .sidebarDesktop {
     width: 7rem;
   }
-  
+
   .contactMenuDesktop {
     gap: 6rem;
     padding: 3rem 0rem;
@@ -314,6 +322,10 @@ h1 {
 
   .sidebarDesktop li {
     scale: 1.5;
+  }
+
+  .sidebarDesktop li:hover {
+    scale: 1.6;
   }
 }
 
@@ -530,7 +542,7 @@ h3 {
   right: 0;
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
-  min-height: 50%; 
+  min-height: 50%;
   overflow: hidden;
   padding: 0rem 0.5rem;
   transition: 0.5s ease;
@@ -588,7 +600,7 @@ h3 {
 
   .overlayPortfolio {
     height: 0%;
-    min-height: auto; 
+    min-height: auto;
   }
 }
 
@@ -607,7 +619,6 @@ h3 {
     width: calc(50% - 1rem);
   }
 }
-
 
 /* Section 3 */
 #educationSection {
