@@ -330,12 +330,20 @@ h1 {
 }
 
 /* Main */
-.section {
+.root {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 1rem;
   box-sizing: border-box;
+  max-width: 112rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   overflow: hidden;
 }
 
@@ -353,20 +361,43 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
-  .section {
-    padding: 2rem 4rem;
+  .root {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .section {
-    padding: 3rem 7rem 2rem;
+  .root {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .wrapper {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .section {
-    padding: 4rem 12rem 3rem;
+  .root {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  .wrapper {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
 
@@ -376,12 +407,14 @@ h3 {
 }
 
 .backgroundWaveOrange {
+  position: absolute;
+  bottom: 0;
   background-image: url("./Images/Onades Taronja.png");
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
-  /* min-height: 45rem; */
-  align-content: flex-start;
+  height: 100%;
+  width: 100%;
 }
 
 .portraitImgContainer {
@@ -408,7 +441,6 @@ h3 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transition: 0.5s ease;
 }
 
 .portraitImgContainer img {
@@ -427,28 +459,52 @@ h3 {
   margin: 1rem 0;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .hireMeButton {
-  height: 3rem;
-  width: 7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #252525;
   border-radius: 1.5rem;
-  font-size: 1.25rem;
+  background-color: #252525;
+  color: #dce0d9;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.25rem;
+  line-height: 1rem;
+  min-width: 4rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.hireMeButton:hover {
+  background-color: #dce0d9;
+  color: #252525;
+}
+
+.hireMeButton:focus {
+  background-color: #dce0d9;
+  color: #252525;
+}
+
+.hireMeButton:focus-visible {
+  background-color: #dce0d9;
+  color: #252525;
+}
+
+.hireMeButton:active {
+  background-color: #dce0d9;
+  color: #252525;
 }
 
 @media only screen and (min-width: 768px) {
-  #aboutSection .section {
+  #aboutSection .wrapper {
     flex-wrap: nowrap;
     align-items: center;
   }
 
   .backgroundWaveOrange {
-    background-size: contain;
-    /* min-height: 30rem; */
+    background-size: cover;
   }
 
   .portraitImgContainer {
@@ -480,6 +536,13 @@ h3 {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .infoContainer p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
 /* Section 2 */
 
 #portfolioSection {
@@ -487,20 +550,21 @@ h3 {
 }
 
 .backgroundWaveGray {
-  display: flex;
-  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-content: flex-start;
   background-image: url("./Images/Onada Gris.png");
   background-position-y: bottom;
   background-position-x: center;
   background-repeat: no-repeat;
-  /* min-height: 45rem; */
-  gap: 3rem;
 }
 
 .sectionTitle {
   height: fit-content;
+  margin-bottom: 2rem;
 }
 
 .portfolioGridContainer {
@@ -514,7 +578,9 @@ h3 {
 }
 
 .portfolioGrid li {
+  box-sizing: border-box;
   display: block;
+  border: 2px solid #dce0d9;
 }
 
 .portfolioGrid li:nth-child(3),
@@ -525,7 +591,6 @@ h3 {
 .portfolioGrid img {
   box-sizing: border-box;
   width: 100%;
-  border: 2px solid #dce0d9;
 }
 
 /* Portfolio Image Overlay */
@@ -540,7 +605,7 @@ h3 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(37, 37, 37, 0.8);
   width: 100%;
   min-height: 50%;
   overflow: hidden;
@@ -549,6 +614,13 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlayPortfolio h3,
+.overlayPortfolio p {
+  color: #dce0d9;
 }
 
 .portfolioImgContainer:hover .overlayPortfolio {
@@ -580,7 +652,6 @@ h3 {
 
   .portfolioGrid img {
     box-sizing: border-box;
-    border: 2px solid #dce0d9;
   }
 
   .portfolioGrid li {
@@ -625,7 +696,7 @@ h3 {
   background-color: #dce0d9;
 }
 
-#educationSection .section {
+#educationSection .wrapper {
   min-height: 43rem;
   align-items: center;
   justify-content: center;
@@ -659,7 +730,7 @@ h3 {
     max-width: 31rem;
   }
 
-  #educationSection .section {
+  #educationSection .wrapper {
     gap: 4rem;
   }
 }
