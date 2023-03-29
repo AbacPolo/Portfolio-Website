@@ -697,7 +697,6 @@ h3 {
 }
 
 #educationSection .wrapper {
-  min-height: 43rem;
   align-items: center;
   justify-content: center;
 }
@@ -732,6 +731,18 @@ h3 {
 
   #educationSection .wrapper {
     gap: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #educationSection .wrapper {
+    min-height: 27rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #educationSection .wrapper {
+    min-height: 40rem;
   }
 }
 
